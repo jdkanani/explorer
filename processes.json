@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "Matic: explorer",
+      "script": "script.sh",
+      "max_restarts": 5,
+      "error_file": "logs/explorer.stderr.log",
+      "out_file": "logs/explorer.stdout.log",
+      "pid_file": "pids/explorer.pid",
+      "env": {
+        "NODE_ENV": "production",
+        "NETWORK_ID_SYNC": 1
+      }
+    }
+  ]
+}
